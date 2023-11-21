@@ -8,12 +8,13 @@ Considere que o valor de π é 3,14.*/
 #include<stdio.h>
 int main()
 {
-    float D, P, A, R = D/2;
+    float D, P, A;
     printf("Diametro: ");
     scanf("%f", &D);
+    float R = D/2, Pi = 3.14;
 
-    P = 2*3.14*R;
-    A = 3.14*(R*R);
+    P = 2*Pi*R;
+    A = Pi*(R*R);
 
     printf("Perimetro: %.1f.\nArea: %.1f.", P, A);
 }
